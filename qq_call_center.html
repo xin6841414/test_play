@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script charset='utf-8' src='http://wpa.b.qq.com/cgi/wpa.php' ></script>
+    <style>
+        body{margin: 0px;padding: 0px;}
+        html{margin: 0px;padding: 0px;width:100%;height:100%;background:url("themes/default/img/revise/bgbg.jpg") no-repeat center; }
+    </style>
+    <!--新版客服工具-->
+    <script type="text/javascript">
+        document.write('<script src="\/\/assets-cdn.kf5.com\/supportbox\/main.js?' + (new Date).getDay() + '" id="kf5-provide-supportBox" kf5-domain="jpgoodbuy.kf5.com" charset="utf-8"><\/script>');
+    </script>
+</head>
+<body>
+
+<img style="display: none;" id="BizQQWPA" src="themes/default/img/revise/qtan.png">
+
+<script>
+    BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 800111123, selector: 'BizQQWPA'});
+    function call_qq(){
+
+        setTimeout(function(){
+            var iframe = document.getElementsByTagName('iframe');
+            if( iframe.length >= 2 ){
+                document.getElementById('BizQQWPA').click();
+            }else{
+                call_qq();
+            }
+        },'200');
+    }
+    call_qq();
+
+</script>
+
+</body>
+</html>
